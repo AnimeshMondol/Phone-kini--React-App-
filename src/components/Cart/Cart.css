@@ -1,0 +1,12 @@
+.cart{
+    position: sticky;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 10px;
+    
+}
+.cart img{
+    height: 80px;
+    width: 60px;
+}
