@@ -6,6 +6,7 @@ import './Shop.css'
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
+    const [, setRandom] = useState([]);
 
     useEffect( () =>{
         fetch('product.json')
@@ -24,6 +25,14 @@ const Shop = () => {
             alert("Sorry you cannot add more then 4 items!!");
         }
         
+    }
+
+    const handleChooseOneForMe = (cart) =>{
+        console.log(cart);
+       
+        const newProduct = Math.floor(Math.random()*cart.length);
+        setRandom(newProduct);
+      //  console.log(newProduct);
     }
 
     return (
@@ -51,7 +60,7 @@ const Shop = () => {
             <button className='choose-new-button'>
                 <p>Choose New</p>
             </button>
-            <button className='choose-1-for-me-button'>
+            <button onClick={() => handleChooseOneForMe(cart)} className='choose-1-for-me-button'>
                 <p>Choose 1 For Me</p>
             </button>
             </div>
