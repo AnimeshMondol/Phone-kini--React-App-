@@ -1,0 +1,50 @@
+.product{
+    width: 280px;
+    height: 520px;
+    border: 2px solid black;
+    border-radius: 8px;
+    position: relative;
+}
+.product img{
+    width: 260px;
+    height: 330px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.product-info{
+    margin: 0 14px;
+}
+.product-info p{
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+.product-name{
+    font-family: fantasy;
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 7px;
+}
+.product-price{
+    font-weight: 200;
+}
+.btn-cart{
+    width: 100%;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0px 0px 8px 8px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-cart .btn-text{
+    margin-right: 5px;
+}
+.btn-cart:hover{
+    background-color: rgb(80, 80, 80);
+}
+.product:hover{
+    box-shadow: 10px 5px 5px gray;
+}
