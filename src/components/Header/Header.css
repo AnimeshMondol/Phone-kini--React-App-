@@ -1,0 +1,39 @@
+.nav-bar{
+    height: 100px;
+    width: auto;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.nav-bar h1{
+    color: rgb(199, 199, 199);
+}
+.nav-bar a{
+    color: rgb(199, 199, 199);
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.nav-bar h1:hover{
+    color: white;
+}
+.nav-bar a:hover{
+    color: white;
+}
+@media screen and (max-width:512px) {
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        padding: 20px;
+    }
+    .nav-bar h1:hover{
+        color: white;
+    }
+    .nav-bar a:hover{
+        color: white;
+    }
+}
