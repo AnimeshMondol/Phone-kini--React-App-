@@ -43,7 +43,8 @@
     margin-right: 5px;
 }
 .btn-cart:hover{
-    background-color: rgb(80, 80, 80);
+    background-color: rgb(150, 195, 231);
+    color: black;
 }
 .product:hover{
     box-shadow: 10px 5px 5px gray;
