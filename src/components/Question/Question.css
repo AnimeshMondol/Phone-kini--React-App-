@@ -1,0 +1,24 @@
+.container{
+    background-color: rgb(252, 248, 255);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.question{
+    padding: 10px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #e7e7e7;
+  }

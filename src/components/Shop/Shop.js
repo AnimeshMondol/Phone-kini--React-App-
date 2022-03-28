@@ -6,7 +6,6 @@ import './Shop.css'
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
-    //const [, setRandom] = useState([]);
 
     useEffect(() => {
         fetch('product.json')
@@ -41,9 +40,6 @@ const Shop = () => {
             setCart([]);
             setCart(randomProduct);
         }
-        //const newProduct = ;
-        // setRandom(newProduct);
-        // console.log(newProduct);
     }
 
     const handleChooseNew = () => {
