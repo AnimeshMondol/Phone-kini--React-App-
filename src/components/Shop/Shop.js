@@ -7,7 +7,6 @@ const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
     const [, setRandom] = useState([]);
-    const [freeCart, setFreeCart] = useState([]);
 
     useEffect( () =>{
         fetch('product.json')
@@ -17,10 +16,10 @@ const Shop = () => {
 
 
     const handleAddToCart = (product) =>{
-        console.log(product);
+
         if(cart.length < 4){
             const newCart = [...cart, product];
-            setCart(newCart);
+            setCart(newCart);     
         }
         else{
             alert("Sorry you cannot add more then 4 items!!");
@@ -36,10 +35,9 @@ const Shop = () => {
         console.log(newProduct);
     }
 
-    const handleChooseNew = (freeCart) =>{
-        const newNewCart = [];
-        setFreeCart(newNewCart);
-        console.log(newNewCart);
+    const handleChooseNew = () =>{
+        const emptyCart = [];
+        setCart(emptyCart);
     }
 
     return (
@@ -64,7 +62,7 @@ const Shop = () => {
                         ></Cart>)
                 }
             <div className='cart-button'>
-            <button onClick={() => handleChooseNew(freeCart)} className='choose-new-button'>
+            <button onClick={() => handleChooseNew()} className='choose-new-button'>
                 <p>Choose New</p>
             </button>
             <button onClick={() => handleChooseOneForMe(cart)} className='choose-1-for-me-button'>
