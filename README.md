@@ -3,6 +3,7 @@
 
 The Live site with Netlify [Click Here To Visit The Live Site](https://phone-kini-007.netlify.app/).
 
+Site Link : https://phone-kini-007.netlify.app/
 
 ## Available Scripts
 
